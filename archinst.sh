@@ -92,6 +92,12 @@ echo "127.0.0.1\tlocalhost\n::1\tlocalhost\n127.0.1.1\t$hostname.localdomain\t$h
 echo 'Please enter your root password!'
 passwd
 
+mkdir /boot/efi
+mount "$disk"1
+
+grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
+
+
 echo 'Script has finished'
 
 
