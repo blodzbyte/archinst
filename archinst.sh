@@ -92,7 +92,7 @@ echo "127.0.0.1\tlocalhost\n::1\tlocalhost\n127.0.1.1\t$hostname.localdomain\t$h
 echo 'Please enter your root password!'
 passwd
 
-echo 'Script has finished
+echo 'Script has finished'
 
 
 
